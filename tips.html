@@ -1,0 +1,248 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>2018 Mini Marathon</title>
+<link rel="icon" href="images/favicon.ico" type="image/ico"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style type="text/css">
+	@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+</style>
+<link rel="stylesheet" href="assets/css/colorbox.css"/>
+<!-- <script src="assets/js/bootstrap.min.js"></script> -->
+<script src="js/bootstrap-3.3.7.js"></script>
+<!-- <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css"/> -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="assets/css/main.css"/>
+<script src="assets/js/jquery.colorbox.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">
+    .jumbotron {
+	text-align:center;
+	background-image: url("images/field_track.jpg");
+    background-color: #C3443B;
+    margin-bottom: 10;`enter code here`
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+  .jumbotron img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+  .carousel-caption h3 {
+font-family:    sans-serif;
+color:          #C3443B !important;
+  }
+  .navbar-default {
+	  margin-bottom: 0px;
+	  padding-bottom: 10px;
+	  }
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="homepage.html">
+        <img width="30" height="30" alt="Brand" src="images/logo.png">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Event Info<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="race_info.html"><span class="glyphicon glyphicon-info-sign"></span> Race Information</a></li>
+            <li><a href="rules_regulation.html"><span class="glyphicon glyphicon-ok-circle"></span> Rules and Regulation</a></li>
+            <li><a href="routing.html"><span class="glyphicon glyphicon-map-marker"></span> Routing</a></li>
+            <li><a href="result.html"><span class="glyphicon glyphicon-list"></span> Results</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Related Information<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="record_holders.html"><span class="glyphicon glyphicon-fire"></span> Record Holders</a></li>
+            <li><a href="tips.html"><span class="glyphicon glyphicon-heart"></span> Training Tips</a></li>
+            <li><a href="download.html"><span class="glyphicon glyphicon-download-alt"></span> Download</a></li>
+            <li><a href="related_webs.html"><span class="glyphicon glyphicon-globe"></span> Related Websites</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Others<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="photos_videos.html"><span class="glyphicon glyphicon-picture"></span> Photos and Videos</a></li>
+            <li><a href="contact_us.html"><span class="glyphicon glyphicon-edit"></span> Contact Us</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<!-- Start of Banner-->
+<div class="jumbotron">
+  <div class="container">
+	  <a href="index.html"><img class="img-responsive" src="images/banner.png" alt="Mini Marathon 2018"></a>
+   </div>
+</div>
+<!-- /.carousel -->
+<br>
+<div class="container">
+	<div class="row">
+    	<div class="col-xs-12 col-sm-12">
+<h2>Training Tips</h2>
+<br>
+<p>Training tips are provided to remind participants to remind them the safety precautions so that the rsik of danger can be reduced and runners can perfomr a better performance.</p>
+ <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        	Ways to recover after the race
+</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">A determined mind for endurance is essential for runners completing a marathon race. While on the other hand, it is also very important to have sufficient rest and proper recovery exercise after the race too. Not only can it lower the risk of injury, but it can also quickly eliminate fatigue. Having a suitable post-race meal and moderate jogging will also help for future races and facilitate the body’s recovery.
+<br><br>
+Do not stop immediately after the race, no matter how tired you are or how hard it is to lift your legs, you must keep walking. Runners should have full-body stretching after the race, in order to relax the muscles of your entire body. Runners may consider using massage cream while massaging their legs, as it can speed up blood circulation and ease muscle pain after the race.
+<br><br>
+Runners should take lots of good rest and relish the enjoyment of finishing the race. While resting, do more leg stretching exercises and let the fatigued muscles relax. The week after, you may begin a recovery run of around 20 to 30 minutes. Continue with the recovery run every day and keep it at a moderate speed of around 3 km for every 20 minutes. Low intensity cross training can be an option for recovery training. Do not drop out of training just because you are lazy or you think your body needs to rest. Jogging can enhance blood circulation and bring away the lactic acid accumulated in your body, as well as the fatigue feeling.
+<br><br>
+Besides recovery training, runners should watch their diet simultaneously, especially those who participated in a full marathon. All the glycogen stored in your body will be used up by the time you finish the race, therefore, runners should replace the loss of fluid, electrolytes, carbohydrates and proteins by eating and drinking well. As for replenishing food and drinks, bananas are a good alternative to sports drinks. A single banana can provide around 100 calories and a rich supply of starch and electrolytes like potassium which can replenish what you have lost during the race.
+
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Speed Distribution</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">It is important for runners to begin their preparation for the marathon race with accumulated running mileage so as to build the foundation for long-term, progressive training. However, if you want to perform your best on race day, the key to success is pre-race deployment. Firstly, runners need to know how to distribute their running strength in different phases of the race, to avoid exhaustion and retirement at the latter stage. Thus, speed distribution is the first thing that runners need to learn.
+<br><br>
+Speed distribution refers to the approximate running speed per kilometer. Amateur runners or those who are joining the marathon for the first time should start with a speed of 5% slower than that of the first 3 to 5 km of your normal training. For example, if your predicted speed is 6 min/km, it is most likely that you will finish a full marathon race in about 4 hours 13 minutes, so the actual speed for the 3 to 5 km should be 6 minutes 18 seconds. The speed will rapidly burn fat and retain carbohydrates for consumption at later stages. If you are comfortable after the first 3 to 5 km, then you can gradually increase the speed to your original or expected speed. The emphasis is to run at a relaxed speed for the first 10 or more km.
+
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        The proper way to run</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body"><ul><li>Arms movement: The essence of your arms movement is to assist your legs movement. When swinging up, they shall not cross the centre line of your body; when swinging down, your hand should just pass the waist line. </li>
+      <li>Legs: Keep the motion forwards; avoid up-lifting motion; Upper body and the front foot should align on the same line when the foot strikes the ground.</li></ul>
+      <a class="youtube cboxElement" href="http://www.youtube.com/embed/jG0o4qAH1wk?rel=0&amp;wmode=transparent">Watch on Youtube</a>
+      </div>
+    </div>
+  </div>
+</div>
+<p>Source: Standard Chartered Hong Kong Marathon</p>  	    
+   	    </div>
+    </div>
+</div>
+<br>
+<!--start of footer-->
+<div class="footer">
+  <div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-3">
+			<a href="homepage.html"><img class="footer_logo img-responsive" src="images/footer_logo.png" alt=""></a>
+		</div>
+ 		<div class="col-xs-12 col-sm-3">
+ 			<h4>Event Info</h4>
+		  <ul class="list-unstyled">
+ 					<li><a href="race_info.html">Race Information</a></li>
+ 					<li><a href="rules_regulation.html">Rules and Regulation</a></li>
+ 					<li><a href="routing.html">Routing</a></li>
+ 					<li><a href="result.html">Results</a></li>
+		  </ul>
+ 		</div>	
+ 			<div class="col-xs-12 col-sm-3">
+ 				<h4>Related Information</h4>
+ 				<ul class="list-unstyled">
+ 					<li><a href="record_holders.html">Record Holders</a></li>
+ 					<li><a href="tips.html">Training Tips</a></li>
+ 					<li><a href="download.html">Download</a></li>
+ 					<li><a href="related_webs.html">Related Website</a></li>
+ 				</ul>
+ 			</div>	
+ 		<div class="col-xs-12 col-sm-3">
+ 			<h4>Others</h4>
+ 			<ul class="list-unstyled">
+ 				<li><a href="photos_videos.html">Photos and Videos</a></li>
+ 				<li><a href="contact_us.html">Contact Us</a></li>
+ 			</ul>
+  		</div>
+  	</div>	
+	<div class="row"><p class="navbar-text">Copyright © 2017 PED of CDGFSS</p></div>
+  </div>
+</div>
+<!--Beofre end of body-->
+ <script type="text/javascript">
+  $(function(){
+    $('myCarousel').carousel(cycle);
+  })
+  </script>
+  <script src="assets/js/countdown.js"></script>
+</body>
+</html>
